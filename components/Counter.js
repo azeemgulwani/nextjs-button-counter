@@ -24,3 +24,11 @@ export default function Counter({ initialCount = 0, initialStep = 1 }) {
       <div aria-live="polite" style={{ fontSize: '1.5em', margin: '10px' }}>
         Count: {count}
       </div>
+      
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
+        <button onClick={increment}>+{step}</button>
+        <button onClick={decrement} disabled={count - step < 0}>
+          -{step}
+        </button>
+        <button onClick={reset}>Reset</button>
+      </div>
