@@ -32,3 +32,19 @@ export default function Counter({ initialCount = 0, initialStep = 1 }) {
         </button>
         <button onClick={reset}>Reset</button>
       </div>
+      
+      <div style={{ marginTop: '10px' }}>
+        <label>
+          Step:
+          <input
+            type="number"
+            value={step}
+            min="1"
+            onChange={handleStepChange}
+            style={{ marginLeft: '5px', width: '60px' }}
+          />
+        </label>
+      </div>
+    </div>
+  );
+}
