@@ -15,3 +15,12 @@ export default function Counter({ initialCount = 0, initialStep = 1 }) {
     const value = Number(e.target.value);
     setStep(value >= 1 ? value : 1); // Enforce minimum step of 1
   };
+
+  return (
+    <div style={{ margin: '20px', textAlign: 'center' }}>
+      <h2>Counter</h2>
+
+      {/* aria-live ensures accessibility for screen readers */}
+      <div aria-live="polite" style={{ fontSize: '1.5em', margin: '10px' }}>
+        Count: {count}
+      </div>
