@@ -3,7 +3,7 @@ Next.js Button Counter
 A simple interactive React + Next.js web app that displays a reusable counter component.
 The app demonstrates state management with useState, event handling, props, and accessibility best practices.
 
-How to Run Locally
+**How to Run Locally?**
 
 1. Install dependencies:
 
@@ -16,16 +16,16 @@ npm run dev
 
 
 Then visit http://localhost:3000
- in your browser.
+in your browser.
 
-How to Build
+**How to Build?**
 
 To create and run a production build:
 
 npm run build
 npm start
 
-Features Implemented
+**Features Implemented**
 
 Displays current count
 
@@ -37,7 +37,7 @@ Step input (<input type="number">) to change increment/decrement amount
 
 Uses useState for state management
 
-Props:
+**Props:**
 
 initialCount (default 0)
 
@@ -45,13 +45,13 @@ initialStep (default 1)
 
 Decrement button disabled when count − step < 0
 
-Accessible UI:
+**Accessible UI:**
 
 aria-live="polite" for count updates
 
 Proper labels and real <button> elements
 
-Two counter instances:
+**Two counter instances:**
 
 Default counter
 
@@ -61,7 +61,7 @@ Counter with custom props (initialCount={5}, initialStep={2})
 
 Styling uses simple inline CSS for clarity (no advanced design).
 
-No persistent storage — count resets on refresh.
+No persistent storage; count resets on refresh.
 
 Input validation ensures step value ≥ 1 only.
 
